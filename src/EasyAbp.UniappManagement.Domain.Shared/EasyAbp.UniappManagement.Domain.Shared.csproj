@@ -5,6 +5,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>EasyAbp.UniappManagement</RootNamespace>
+    <Version>0.1.3</Version>
   </PropertyGroup>
 
   <ItemGroup>

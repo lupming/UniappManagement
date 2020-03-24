@@ -8,6 +8,7 @@
     <IsPackable>true</IsPackable>
     <OutputType>Library</OutputType>
     <RootNamespace>EasyAbp.UniappManagement.Web</RootNamespace>
+    <Version>0.1.3</Version>
   </PropertyGroup>
 
   <ItemGroup>

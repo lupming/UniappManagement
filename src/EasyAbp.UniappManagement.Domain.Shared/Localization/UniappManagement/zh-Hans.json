@@ -1,7 +1,7 @@
 {
   "culture": "zh-Hans",
   "texts": {
-    "Menu:Uniapp": "uni-app 管理",
+    "Menu:Uniapp": "uni-app管理",
     "Uniapp": "uni-app",
     "UniappName": "应用名称",
     "UniappDescription": "应用介绍",
@@ -10,15 +10,26 @@
     "CreateUniapp": "新建应用",
     "EditUniapp": "编辑",
     "UniappDeletionConfirmationMessage": "确认删除应用 {0}?",
+
     "SuccessfullyDeleted": "删除成功",
     "UniappVersion": "uni-app 版本管理",
     "UniappVersionAppId": "应用 ID",
     "UniappVersionBuildNumber": "版本序号",
-    "UniappVersionTag": "版本 Tag",
+    "UniappVersionTag": "版本Tag",
     "UniappVersionWgtUrl": "WgtUrl",
     "UniappVersionPkgUrl": "PkgUrl",
     "CreateUniappVersion": "新建版本",
     "EditUniappVersion": "编辑",
-    "UniappVersionDeletionConfirmationMessage": "确认删除版本 {0}?"
+    "UniappVersionDeletionConfirmationMessage": "确认删除版本 {0}?",
+
+
+    "Permission:Uniapps": "Uniapps",
+    "Permission:UniappVersions": "UniappVersions",
+
+    "Permission:Create": "创建",
+    "Permission:Update": "编辑",
+    "Permission:Delete": "删除"
+
+
   }
 }

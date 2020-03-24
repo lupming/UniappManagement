@@ -1,12 +1,9 @@
-using System.Threading.Tasks;
 using EasyAbp.UniappManagement.Authorization;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
-using EasyAbp.UniappManagement.Localization;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Localization;
 using EasyAbp.UniappManagement.Localization;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Localization;
+using System.Threading.Tasks;
 using Volo.Abp.UI.Navigation;
 
 namespace EasyAbp.UniappManagement.Web
@@ -23,8 +20,9 @@ namespace EasyAbp.UniappManagement.Web
 
         private async Task ConfigureMainMenu(MenuConfigurationContext context)
         {
-            var administrationMenuItem = context.Menu.GetAdministration();
             var l = context.ServiceProvider.GetRequiredService<IStringLocalizer<UniappManagementResource>>();            //Add main menu items.
+                                 
+            var administrationMenuItem = context.Menu.FindMenuItem("SystemManagement") ?? context.Menu.GetAdministration();
 
             var authorizationService = context.ServiceProvider.GetRequiredService<IAuthorizationService>();
 
@@ -34,6 +32,8 @@ namespace EasyAbp.UniappManagement.Web
                     new ApplicationMenuItem("Uniapp", l["Menu:Uniapp"], "/UniappManagement/Uniapps/Uniapp")
                 );
             }
+
+
         }
     }
 }
